@@ -1,714 +1,940 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dcat="http://www.w3.org/ns/dcat#"
-    xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:adms="http://www.w3.org/ns/adms#">
-  <dcat:Catalog rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#catalog">
+  xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:dcat="http://www.w3.org/ns/dcat#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <dcatapit:Catalog rdf:about="http://dati.gov.it/resource/Catalogo/asstom-catalogo-dati-metadati-banche-dati">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
     <dct:title xml:lang="it">Catalogo di dati, metadati e banche dati - ASST Ovest Milanese</dct:title>
     <dct:description xml:lang="it">Catalogo dei dati, dei metadati e delle relative banche dati in possesso dell'ASST Ovest Milanese, pubblicato nella sezione Amministrazione Trasparente.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
+    <dct:publisher>
+      <dcatapit:Agent rdf:about="http://dati.gov.it/resource/Amministrazione/asstom">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>asstom</dct:identifier>
+        <foaf:name xml:lang="it">Azienda Socio Sanitaria Territoriale Ovest Milanese</foaf:name>
+        <foaf:homepage rdf:resource="https://www.asst-ovestmi.it/"/>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
     <foaf:homepage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dct:spatial rdf:resource="http://publications.europa.eu/resource/authority/place/ITA"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2025"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2024"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2023"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2022"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2021"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2025"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2024"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2023"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2022"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2021"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2025"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2024"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2023"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2022"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2021"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-laboratorio-2025"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-laboratorio-2024"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-lab-anatomia-patologica-2025"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-lab-anatomia-patologica-2024"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-comuni-distretti"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-dipartimenti-direzione-competenza"/>
-    <dcat:dataset rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-incarichi-funzione"/>
-  </dcat:Catalog>
-
-  <foaf:Organization rdf:about="https://www.asst-ovestmi.it#ente">
-    <foaf:name>ASST Ovest Milanese</foaf:name>
-    <foaf:homepage rdf:resource="https://www.asst-ovestmi.it"/>
-    <vcard:hasEmail rdf:resource="mailto:protocollo@asst-ovestmi.it"/>
-  </foaf:Organization>
-
-  <vcard:Organization rdf:about="https://www.asst-ovestmi.it#contact">
-    <vcard:fn>SC Sistemi Informativi - ASST Ovest Milanese</vcard:fn>
-    <vcard:hasEmail rdf:resource="mailto:protocollo@asst-ovestmi.it"/>
-  </vcard:Organization>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2025">
-    <dct:identifier>ricoveri-2025</dct:identifier>
-    <dct:title xml:lang="it">RICOVERI 2025</dct:title>
-    <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
     <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2025-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2025-csv">
-    <dct:title xml:lang="it">RICOVERI 2025 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “RICOVERI 2025”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16851/RICOVERI%202025.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16851/RICOVERI%202025.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2024">
-    <dct:identifier>ricoveri-2024</dct:identifier>
-    <dct:title xml:lang="it">RICOVERI 2024</dct:title>
-    <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2024-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2024-csv">
-    <dct:title xml:lang="it">RICOVERI 2024 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “RICOVERI 2024”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16850/RICOVERI%202024.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16850/RICOVERI%202024.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2023">
-    <dct:identifier>ricoveri-2023</dct:identifier>
-    <dct:title xml:lang="it">Ricoveri 2023</dct:title>
-    <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2023.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2023-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2023-csv">
-    <dct:title xml:lang="it">Ricoveri 2023 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Ricoveri 2023”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16712/Ricoveri%202023.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16712/Ricoveri%202023.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2022">
-    <dct:identifier>ricoveri-2022</dct:identifier>
-    <dct:title xml:lang="it">Ricoveri 2022</dct:title>
-    <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2022.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2022-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2022-csv">
-    <dct:title xml:lang="it">Ricoveri 2022 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Ricoveri 2022”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16704/Ricoveri%202022.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16704/Ricoveri%202022.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-ricoveri-2021">
-    <dct:identifier>ricoveri-2021</dct:identifier>
-    <dct:title xml:lang="it">Ricoveri 2021</dct:title>
-    <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2021.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2021-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-ricoveri-2021-csv">
-    <dct:title xml:lang="it">Ricoveri 2021 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Ricoveri 2021”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16705/Ricoveri%202021.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16705/Ricoveri%202021.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2025">
-    <dct:identifier>accessi-pronto-soccorso-2025</dct:identifier>
-    <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2025</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2025-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2025-csv">
-    <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2025 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “ACCESSI PRONTO SOCCORSO 2025”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16845/ACCESSI%20PRONTO%20SOCCORSO%202025.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16845/ACCESSI%20PRONTO%20SOCCORSO%202025.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2024">
-    <dct:identifier>accessi-pronto-soccorso-2024</dct:identifier>
-    <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2024</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2024-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2024-csv">
-    <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2024 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “ACCESSI PRONTO SOCCORSO 2024”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16844/ACCESSI%20PRONTO%20SOCCORSO%202024.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16844/ACCESSI%20PRONTO%20SOCCORSO%202024.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2023">
-    <dct:identifier>accessi-pronto-soccorso-2023</dct:identifier>
-    <dct:title xml:lang="it">Accessi PS 2023</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2023.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2023-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2023-csv">
-    <dct:title xml:lang="it">Accessi PS 2023 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Accessi PS 2023”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16706/Accessi%20PS%202023.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16706/Accessi%20PS%202023.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2022">
-    <dct:identifier>accessi-pronto-soccorso-2022</dct:identifier>
-    <dct:title xml:lang="it">Accessi PS 2022</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2022.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2022-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2022-csv">
-    <dct:title xml:lang="it">Accessi PS 2022 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Accessi PS 2022”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16707/Accessi%20PS%202022.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16707/Accessi%20PS%202022.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-pronto-soccorso-2021">
-    <dct:identifier>accessi-pronto-soccorso-2021</dct:identifier>
-    <dct:title xml:lang="it">Accessi PS 2021</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2021.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2021-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-pronto-soccorso-2021-csv">
-    <dct:title xml:lang="it">Accessi PS 2021 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Accessi PS 2021”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16708/Accessi%20PS%202021.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16708/Accessi%20PS%202021.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2025">
-    <dct:identifier>accessi-ambulatoriali-2025</dct:identifier>
-    <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2025</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2025-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2025-csv">
-    <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2025 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “ACCESSI AMBULATORIALI 2025”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16843/ACCESSI%20AMBULATORIALI%202025.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16843/ACCESSI%20AMBULATORIALI%202025.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2024">
-    <dct:identifier>accessi-ambulatoriali-2024</dct:identifier>
-    <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2024</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2024-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2024-csv">
-    <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2024 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “ACCESSI AMBULATORIALI 2024”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16842/ACCESSI%20AMBULATORIALI%202024.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16842/ACCESSI%20AMBULATORIALI%202024.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2023">
-    <dct:identifier>accessi-ambulatoriali-2023</dct:identifier>
-    <dct:title xml:lang="it">Accessi Ambulatoriali 2023</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2023.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2023-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2023-csv">
-    <dct:title xml:lang="it">Accessi Ambulatoriali 2023 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Accessi Ambulatoriali 2023”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16709/Accessi%20Ambulatoriali%202023.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16709/Accessi%20Ambulatoriali%202023.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2022">
-    <dct:identifier>accessi-ambulatoriali-2022</dct:identifier>
-    <dct:title xml:lang="it">Accessi Ambulatoriali 2022</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2022.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2022-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2022-csv">
-    <dct:title xml:lang="it">Accessi Ambulatoriali 2022 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Accessi Ambulatoriali 2022”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16710/Accessi%20Ambulatoriali%202022.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16710/Accessi%20Ambulatoriali%202022.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-accessi-ambulatoriali-2021">
-    <dct:identifier>accessi-ambulatoriali-2021</dct:identifier>
-    <dct:title xml:lang="it">Accessi Ambulatoriali 2021</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2021.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2021-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-accessi-ambulatoriali-2021-csv">
+    <dcat:themeTaxonomy rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-ambulatoriali-2021">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.001</dct:identifier>
+        <dct:title xml:lang="it">Accessi Ambulatoriali 2021</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2021.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2021-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2021</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nd72042e210ac40aa87e0daf1da5ff7de">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-ambulatoriali-2022">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.002</dct:identifier>
+        <dct:title xml:lang="it">Accessi Ambulatoriali 2022</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2022.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2022-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2022</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N07d937bfbffb4f53812401400771c815">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-ambulatoriali-2023">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.003</dct:identifier>
+        <dct:title xml:lang="it">Accessi Ambulatoriali 2023</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2023.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2023-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2023</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N006d4493b7c343b7901f0c8d46c520ba">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-ambulatoriali-2024">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.004</dct:identifier>
+        <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2024</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2024-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2024</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Ndd59c224612347f284ffe59131ddc6f8">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-ambulatoriali-2025">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.005</dct:identifier>
+        <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2025</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi ambulatoriali dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2025-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2025</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N79c07a9a49ac4ca699cdf2c895fcef87">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-pronto-soccorso-2021">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.006</dct:identifier>
+        <dct:title xml:lang="it">Accessi PS 2021</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2021.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2021-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2021</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nce39776dcfe042cea3897448df2c228f">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-pronto-soccorso-2022">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.007</dct:identifier>
+        <dct:title xml:lang="it">Accessi PS 2022</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2022.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2022-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2022</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nb2234abdbd2d4cc19b4e9c2e62f12045">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-pronto-soccorso-2023">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.008</dct:identifier>
+        <dct:title xml:lang="it">Accessi PS 2023</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2023.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2023-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2023</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nb5670583e25b4f04aee73b6d2950449e">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-pronto-soccorso-2024">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.009</dct:identifier>
+        <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2024</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2024-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2024</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N4a4fd8b5f888426b9f646df660e55ca1">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-accessi-pronto-soccorso-2025">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.010</dct:identifier>
+        <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2025</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli accessi al Pronto Soccorso dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2025-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2025</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N5be1d6747ecb447181e0644cc76b37fd">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-comuni-distretti">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.011</dct:identifier>
+        <dct:title xml:lang="it">comuni-distretti</dct:title>
+        <dct:description xml:lang="it">Metadati relativi ai comuni e distretti di competenza dell'ASST Ovest Milanese.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-comuni-distretti-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/UNKNOWN"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/amministrazione-pubblica"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-dipartimenti-direzione-competenza">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.012</dct:identifier>
+        <dct:title xml:lang="it">DIPARTIMENTI E DIREZIONE DI COMPETENZA</dct:title>
+        <dct:description xml:lang="it">Metadati relativi ai dipartimenti e alla direzione di competenza dell'ASST Ovest Milanese.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-dipartimenti-direzione-competenza-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/UNKNOWN"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/amministrazione-pubblica"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-incarichi-funzione">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.013</dct:identifier>
+        <dct:title xml:lang="it">INCARICHI DI FUNZIONE</dct:title>
+        <dct:description xml:lang="it">Metadati relativi agli incarichi di funzione dell'ASST Ovest Milanese.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-incarichi-funzione-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/UNKNOWN"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/amministrazione-pubblica"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-prestazioni-lab-anatomia-patologica-2024">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.014</dct:identifier>
+        <dct:title xml:lang="it">PRESTAZIONI_LAB_ANATOMIA PAT 2024</dct:title>
+        <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio di Anatomia Patologica dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-lab-anatomia-patologica-2024-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2024</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nd3ff00a263324573b2f76e0d6971623d">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-prestazioni-lab-anatomia-patologica-2025">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.015</dct:identifier>
+        <dct:title xml:lang="it">PRESTAZIONI_LAB_ANATOMIA PAT 2025</dct:title>
+        <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio di Anatomia Patologica dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-lab-anatomia-patologica-2025-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2025</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N647a1570e1424735ba91159bdb29967c">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-prestazioni-laboratorio-2024">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.016</dct:identifier>
+        <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2024</dct:title>
+        <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-laboratorio-2024-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2024</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nbce6680288464fdc9c9c501e6eeaefd6">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-prestazioni-laboratorio-2025">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.017</dct:identifier>
+        <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2025</dct:title>
+        <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-laboratorio-2025-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2025</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N79eaecb81402483ba66382cfcc4b7748">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-ricoveri-2021">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.018</dct:identifier>
+        <dct:title xml:lang="it">Ricoveri 2021</dct:title>
+        <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2021.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2021-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2021</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nfce762b8e032459c9a7d03beb39925f3">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-ricoveri-2022">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.019</dct:identifier>
+        <dct:title xml:lang="it">Ricoveri 2022</dct:title>
+        <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2022.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2022-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2022</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nd9f2408bb5484596a0e843092d74622b">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-ricoveri-2023">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.020</dct:identifier>
+        <dct:title xml:lang="it">Ricoveri 2023</dct:title>
+        <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2023.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2023-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2023</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Nb55784c8f33940e3b6fd7492d4962d3d">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-ricoveri-2024">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.021</dct:identifier>
+        <dct:title xml:lang="it">RICOVERI 2024</dct:title>
+        <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2024-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2024</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="N24fd60910bfb47ce9e017f8f5be4f7c1">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+    <dcat:dataset>
+      <dcatapit:Dataset rdf:about="http://dati.gov.it/resource/Dataset/asstom-ricoveri-2025">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dct:identifier>asstom:D.022</dct:identifier>
+        <dct:title xml:lang="it">RICOVERI 2025</dct:title>
+        <dct:description xml:lang="it">Metadati relativi ai ricoveri dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:issued>
+        <dct:rightsHolder rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:publisher rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dct:creator rdf:resource="http://dati.gov.it/resource/Amministrazione/asstom"/>
+        <dcat:contactPoint rdf:resource="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <foaf:page rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+        <dcat:distribution rdf:resource="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2025-csv"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:keyword xml:lang="it">metadati</dcat:keyword>
+        <dcat:keyword xml:lang="it">open data</dcat:keyword>
+        <dcat:keyword xml:lang="it">sanità</dcat:keyword>
+        <dcat:keyword xml:lang="it">2025</dcat:keyword>
+        <dct:temporal>
+          <dct:PeriodOfTime rdf:nodeID="Ne12917b5562c484aa6e2e3f41bb4f631">
+            <dcatapit:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-01</dcatapit:startDate>
+            <dcatapit:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</dcatapit:endDate>
+          </dct:PeriodOfTime>
+        </dct:temporal>
+        <dct:subject rdf:resource="http://dati.gov.it/resource/Subject/sanita"/>
+      </dcatapit:Dataset>
+    </dcat:dataset>
+  </dcatapit:Catalog>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2021-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     <dct:title xml:lang="it">Accessi Ambulatoriali 2021 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “Accessi Ambulatoriali 2021”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16711/Accessi%20Ambulatoriali%202021.csv"/>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Accessi Ambulatoriali 2021.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
     <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16711/Accessi%20Ambulatoriali%202021.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name xml:lang="it">CC BY</foaf:name>
+        <owl:versionInfo>4.0</owl:versionInfo>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <skos:Concept rdf:about="http://dati.gov.it/resource/Subject/sanita">
+    <skos:prefLabel xml:lang="it">sanità</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2025-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2025 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset ACCESSI AMBULATORIALI 2025.</dct:description>
     <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
     <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-laboratorio-2025">
-    <dct:identifier>prestazioni-laboratorio-2025</dct:identifier>
-    <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2025</dct:title>
-    <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-laboratorio-2025-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-laboratorio-2025-csv">
-    <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2025 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “PRESTAZIONI LABORATORIO 2025”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16847/PRESTAZIONI%20LABORATORIO%202025.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16847/PRESTAZIONI%20LABORATORIO%202025.csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16843/ACCESSI%20AMBULATORIALI%202025.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2022-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Ricoveri 2022 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Ricoveri 2022.</dct:description>
     <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
     <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-laboratorio-2024">
-    <dct:identifier>prestazioni-laboratorio-2024</dct:identifier>
-    <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2024</dct:title>
-    <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-laboratorio-2024-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-laboratorio-2024-csv">
-    <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2024 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “PRESTAZIONI LABORATORIO 2024”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16846/PRESTAZIONI%20LABORATORIO%202024.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16846/PRESTAZIONI%20LABORATORIO%202024.csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16704/Ricoveri%202022.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2023-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Ricoveri 2023 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Ricoveri 2023.</dct:description>
     <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
     <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-lab-anatomia-patologica-2025">
-    <dct:identifier>prestazioni-lab-anatomia-patologica-2025</dct:identifier>
-    <dct:title xml:lang="it">PRESTAZIONI_LAB_ANATOMIA PAT 2025</dct:title>
-    <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio di Anatomia Patologica dell'ASST Ovest Milanese per l'anno 2025.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-lab-anatomia-patologica-2025-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-lab-anatomia-patologica-2025-csv">
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16712/Ricoveri%202023.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2022-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Accessi Ambulatoriali 2022 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Accessi Ambulatoriali 2022.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16710/Accessi%20Ambulatoriali%202022.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2025-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2025 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset ACCESSI PRONTO SOCCORSO 2025.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16845/ACCESSI%20PRONTO%20SOCCORSO%202025.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2025-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">RICOVERI 2025 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset RICOVERI 2025.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16851/RICOVERI%202025.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-lab-anatomia-patologica-2025-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     <dct:title xml:lang="it">PRESTAZIONI_LAB_ANATOMIA PAT 2025 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “PRESTAZIONI_LAB_ANATOMIA PAT 2025”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16849/PRESTAZIONI_LAB_ANATOMIA%20PAT%202025.csv"/>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset PRESTAZIONI_LAB_ANATOMIA PAT 2025.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
     <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16849/PRESTAZIONI_LAB_ANATOMIA%20PAT%202025.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2024-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">ACCESSI PRONTO SOCCORSO 2024 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset ACCESSI PRONTO SOCCORSO 2024.</dct:description>
     <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
     <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-prestazioni-lab-anatomia-patologica-2024">
-    <dct:identifier>prestazioni-lab-anatomia-patologica-2024</dct:identifier>
-    <dct:title xml:lang="it">PRESTAZIONI_LAB_ANATOMIA PAT 2024</dct:title>
-    <dct:description xml:lang="it">Metadati relativi alle prestazioni di laboratorio di Anatomia Patologica dell'ASST Ovest Milanese per l'anno 2024.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-lab-anatomia-patologica-2024-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-prestazioni-lab-anatomia-patologica-2024-csv">
-    <dct:title xml:lang="it">PRESTAZIONI_LAB_ANATOMIA PAT 2024 - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “PRESTAZIONI_LAB_ANATOMIA PAT 2024”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16848/PRESTAZIONI_LAB_ANATOMIA%20PAT%202024.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16848/PRESTAZIONI_LAB_ANATOMIA%20PAT%202024.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-comuni-distretti">
-    <dct:identifier>comuni-distretti</dct:identifier>
-    <dct:title xml:lang="it">comuni-distretti</dct:title>
-    <dct:description xml:lang="it">Metadati relativi ai comuni e distretti di competenza dell'ASST Ovest Milanese.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-comuni-distretti-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-comuni-distretti-csv">
-    <dct:title xml:lang="it">comuni-distretti - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “comuni-distretti”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16852/comuni-distretti.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16852/comuni-distretti.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-dipartimenti-direzione-competenza">
-    <dct:identifier>dipartimenti-direzione-competenza</dct:identifier>
-    <dct:title xml:lang="it">DIPARTIMENTI E DIREZIONE DI COMPETENZA</dct:title>
-    <dct:description xml:lang="it">Metadati relativi ai dipartimenti e alla direzione di competenza dell'ASST Ovest Milanese.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-dipartimenti-direzione-competenza-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-dipartimenti-direzione-competenza-csv">
-    <dct:title xml:lang="it">DIPARTIMENTI E DIREZIONE DI COMPETENZA - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “DIPARTIMENTI E DIREZIONE DI COMPETENZA”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16853/DIPARTIMENTI%20E%20DIREZIONE%20DI%20COMPETENZA.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16853/DIPARTIMENTI%20E%20DIREZIONE%20DI%20COMPETENZA.csv"/>
-    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
-    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
-  <dcat:Dataset rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#dataset-incarichi-funzione">
-    <dct:identifier>incarichi-funzione</dct:identifier>
-    <dct:title xml:lang="it">INCARICHI DI FUNZIONE</dct:title>
-    <dct:description xml:lang="it">Metadati relativi agli incarichi di funzione dell'ASST Ovest Milanese.</dct:description>
-    <dct:publisher rdf:resource="https://www.asst-ovestmi.it#ente"/>
-    <dcat:contactPoint rdf:resource="https://www.asst-ovestmi.it#contact"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
-    <dcat:landingPage rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
-    <dcat:keyword xml:lang="it">sanità</dcat:keyword>
-    <dcat:keyword xml:lang="it">metadati</dcat:keyword>
-    <dcat:keyword xml:lang="it">open data</dcat:keyword>
-    <dcat:distribution rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-incarichi-funzione-csv"/>
-  </dcat:Dataset>
-
-  <dcat:Distribution rdf:about="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati#distribution-incarichi-funzione-csv">
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16844/ACCESSI%20PRONTO%20SOCCORSO%202024.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-incarichi-funzione-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     <dct:title xml:lang="it">INCARICHI DI FUNZIONE - CSV</dct:title>
-    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset “INCARICHI DI FUNZIONE”.</dct:description>
-    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16854/INCARICHI%20DI%20FUNZIONE.csv"/>
-    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16854/INCARICHI%20DI%20FUNZIONE.csv"/>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset INCARICHI DI FUNZIONE.</dct:description>
     <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
     <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:issued rdf:datatype="xsd:date">2026-05-04</dct:issued>
-    <dct:modified rdf:datatype="xsd:date">2026-04-28</dct:modified>
-  </dcat:Distribution>
-
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16854/INCARICHI%20DI%20FUNZIONE.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Organization rdf:about="http://dati.gov.it/resource/PuntoContatto/asstom-sc-sistemi-informativi">
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <vcard:fn xml:lang="it">SC Sistemi Informativi - ASST Ovest Milanese</vcard:fn>
+    <vcard:hasEmail rdf:resource="mailto:protocollo@asst-ovestmi.it"/>
+    <vcard:hasURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <vcard:hasTelephone>
+      <vcard:Voice rdf:nodeID="Ndd89245e144244d19b4a287681963951">
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#TelephoneType"/>
+        <vcard:value>0331449111</vcard:value>
+      </vcard:Voice>
+    </vcard:hasTelephone>
+  </dcatapit:Organization>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2023-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Accessi Ambulatoriali 2023 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Accessi Ambulatoriali 2023.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16709/Accessi%20Ambulatoriali%202023.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-lab-anatomia-patologica-2024-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">PRESTAZIONI_LAB_ANATOMIA PAT 2024 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset PRESTAZIONI_LAB_ANATOMIA PAT 2024.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16848/PRESTAZIONI_LAB_ANATOMIA%20PAT%202024.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2021-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Accessi PS 2021 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Accessi PS 2021.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16708/Accessi%20PS%202021.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2022-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Accessi PS 2022 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Accessi PS 2022.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16707/Accessi%20PS%202022.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2024-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">RICOVERI 2024 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset RICOVERI 2024.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16850/RICOVERI%202024.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-ricoveri-2021-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Ricoveri 2021 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Ricoveri 2021.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16705/Ricoveri%202021.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-laboratorio-2025-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2025 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset PRESTAZIONI LABORATORIO 2025.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16847/PRESTAZIONI%20LABORATORIO%202025.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-pronto-soccorso-2023-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">Accessi PS 2023 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset Accessi PS 2023.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16706/Accessi%20PS%202023.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-prestazioni-laboratorio-2024-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">PRESTAZIONI LABORATORIO 2024 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset PRESTAZIONI LABORATORIO 2024.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16846/PRESTAZIONI%20LABORATORIO%202024.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-dipartimenti-direzione-competenza-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">DIPARTIMENTI E DIREZIONE DI COMPETENZA - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset DIPARTIMENTI E DIREZIONE DI COMPETENZA.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16853/DIPARTIMENTI%20E%20DIREZIONE%20DI%20COMPETENZA.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-accessi-ambulatoriali-2024-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">ACCESSI AMBULATORIALI 2024 - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset ACCESSI AMBULATORIALI 2024.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16842/ACCESSI%20AMBULATORIALI%202024.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="http://dati.gov.it/resource/Distribuzione/asstom-comuni-distretti-csv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dct:title xml:lang="it">comuni-distretti - CSV</dct:title>
+    <dct:description xml:lang="it">Distribuzione in formato CSV del dataset comuni-distretti.</dct:description>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+    <dcat:accessURL rdf:resource="https://www.asst-ovestmi.it/amministrazione-trasparente/catalogo-dati-metadati-e-banche-dati"/>
+    <dcat:downloadURL rdf:resource="https://www.asst-ovestmi.it/system/files/field_allegati_trasparenza/allegati/2058/paragrafi/16852/comuni-distretti.csv"/>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-28</dct:modified>
+  </dcatapit:Distribution>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/GOVE">
+    <skos:prefLabel xml:lang="it">Governo e settore pubblico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://dati.gov.it/resource/Subject/amministrazione-pubblica">
+    <skos:prefLabel xml:lang="it">amministrazione pubblica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/HEAL">
+    <skos:prefLabel xml:lang="it">Salute</skos:prefLabel>
+  </skos:Concept>
 </rdf:RDF>
